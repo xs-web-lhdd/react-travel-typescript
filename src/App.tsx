@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.css'
-import { Header, Footer, SideMenu, Carousel, ProductCollection } from './components/index'
+import { Header, Footer, SideMenu, Carousel, ProductCollection, BusinessPartners } from './components/index'
 import { Col, Row, Typography } from 'antd'
 import { productList1 } from './mockups'
 
@@ -36,6 +36,7 @@ function App() {
           products={productList1}
         />
       </div>
+      <BusinessPartners/>
       <Footer></Footer>
     </div>
   );
