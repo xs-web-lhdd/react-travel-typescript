@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './App.module.css'
-import { Header, Footer, SideMenu, Carousel } from './components/index'
-import { Col, Row } from 'antd'
+import { Header, Footer, SideMenu, Carousel, ProductCollection } from './components/index'
+import { Col, Row, Typography } from 'antd'
+import { productList1 } from './mockups'
+
+import sideImage1 from './assets/images/sider_2019_02-04.png'
 
 function App() {
   return (
@@ -17,6 +20,21 @@ function App() {
             <Carousel/>
           </Col>
         </Row>
+        <ProductCollection
+          title={<Typography.Title level={3} type="warning">爆款推荐</Typography.Title>}
+          sideImage={sideImage1}
+          products={productList1}
+        />
+        <ProductCollection
+          title={<Typography.Title level={3} type="danger">新品上市</Typography.Title>}
+          sideImage={sideImage1}
+          products={productList1}
+        />
+        <ProductCollection
+          title={<Typography.Title level={3} type="danger">国内游推荐</Typography.Title>}
+          sideImage={sideImage1}
+          products={productList1}
+        />
       </div>
       <Footer></Footer>
     </div>
