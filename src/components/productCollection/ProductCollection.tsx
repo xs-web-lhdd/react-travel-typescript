@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './productCollection.module.css'
-import { Col, Row, Typography, Divider} from 'antd'
+import { Col, Row, Divider} from 'antd'
 import { ProductImage } from './ProductImage'
 
 interface PropsType {
